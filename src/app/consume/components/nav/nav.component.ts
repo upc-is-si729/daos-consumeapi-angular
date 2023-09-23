@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+  title = 'Consume API';
 
+  options = [
+    { path: '/home', title: 'Home'},
+    { path: '/consume/newsapi', title: 'News Api'},
+    { path: '/schedule/appointment', title: 'Appointment'},
+    { path: '/about', title: 'About'}
+  ]
 }

@@ -14,13 +14,19 @@ import {MatTableModule} from '@angular/material/table';
 import { FooterContentComponent } from './consume/components/footer-content/footer-content.component';
 import { MainContentComponent } from './consume/components/main-content/main-content.component';
 import { NavComponent } from './consume/components/nav/nav.component';
+import { AboutComponent } from './public/pages/about/about.component';
+import { HomeComponent } from './public/pages/home/home.component';
+import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterContentComponent,
     MainContentComponent,
-    NavComponent
+    NavComponent,
+    AboutComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
