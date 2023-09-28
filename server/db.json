@@ -1,7 +1,18 @@
 {
-  "appointment" : [
+  "appointments" : [
     {
-
+      "id": 1,
+      "studentCode": "202015236",
+      "teacherCode": 8965,
+      "dateTime": "2020-11-16T04:25:03-05:00",
+      "subject": "Retiro de curso"
+    },
+    {
+      "id": 2,
+      "studentCode": "201912785",
+      "teacherCode": 10236,
+      "dateTime": "2023-09-16T11:25:00-05:00",
+      "subject": "Traslado interno"
     }
   ],
   "students": [

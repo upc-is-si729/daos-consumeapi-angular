@@ -11,12 +11,18 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 import { FooterContentComponent } from './consume/components/footer-content/footer-content.component';
 import { MainContentComponent } from './consume/components/main-content/main-content.component';
 import { NavComponent } from './consume/components/nav/nav.component';
 import { AboutComponent } from './public/pages/about/about.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import {AppointmentsService} from "./schedule/services/appointments.service";
+import { AppointmentsComponent } from './schedule/pages/appointments/appointments.component';
+import { AppointmentFormComponent } from './schedule/components/appointment-form/appointment-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,9 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     NavComponent,
     AboutComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AppointmentsComponent,
+    AppointmentFormComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +45,12 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     MatDividerModule,
     MatButtonModule,
     MatToolbarModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [AppointmentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
